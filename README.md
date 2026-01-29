@@ -264,13 +264,17 @@ Track specific stocks over time and build historical price databases for analysi
 Understand web scraping, data cleaning, and financial data processing with real market data.
 
 ⚠️ Important Notes & Best Practices
+
 🔗 Chrome Driver Setup
+
 Selenium automatically manages ChromeDriver. If issues occur:
 
 bash
+
 ## Update Selenium to latest
+
 pip install --upgrade selenium
-🚦 Rate Limiting & Ethical Scraping
+ Rate Limiting & Ethical Scraping
 ⚡ Yahoo Finance's servers handle significant traffic. Be responsible:
 
 🕐 Don't scrape during heavy market hours if possible
@@ -287,27 +291,27 @@ pip install --upgrade selenium
 
 ### ✅ DO:
 
-⏳ Use WebDriverWait for dynamic content
+ Use WebDriverWait for dynamic content
 
-🎯 Handle pagination correctly
+ Handle pagination correctly
 
-🛡️ Implement error handling
+ Implement error handling
 
-🧹 Clean and normalize data properly
+ Clean and normalize data properly
 
-📊 Store raw data separately from cleaned data
+ Store raw data separately from cleaned data
 
 ### ❌ DON'T:
 
-🚫 Hammer the server with rapid requests
+ Hammer the server with rapid requests
 
-🚫 Ignore page loading signals
+ Ignore page loading signals
 
-🚫 Store sensitive user information
+ Store sensitive user information
 
-🚫 Violate terms of service
+ Violate terms of service
 
-🚫 Skip data validation
+ Skip data validation
 
 📜 License
 📋 MIT License — See LICENSE file for details.
@@ -367,12 +371,3 @@ Web Scraping Best Practices
 
 💡 Share your improvements
 
-
-🔗 Quick Links
-🚀 Installation
-
-💻 Usage
-
-⚙️ Configuration
-
-📬 Contact
