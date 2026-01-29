@@ -366,3 +366,13 @@ Web Scraping Best Practices
 🔄 Fork and adapt for your use case
 
 💡 Share your improvements
+
+
+🔗 Quick Links
+🚀 Installation
+
+💻 Usage
+
+⚙️ Configuration
+
+📬 Contact
