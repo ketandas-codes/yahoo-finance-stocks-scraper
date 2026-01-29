@@ -1,5 +1,12 @@
 # 📈 Yahoo Finance Stocks Scraper
 
+## Project Files
+
+- [yahoo_scraper.py](yahoo_scraper.py) — scraping logic  
+- [yahoo_data_cleaner.py](yahoo_data_cleaner.py) — data cleaning  
+
+- [yahoo_stocks_cleaned.csv](yahoo_stocks_cleaned.csv) — cleaned dataset (example)
+
 ## 📋 Project Overview
 
 Yahoo Finance Stocks Scraper is a 🎯 lightweight, efficient Python web scraping solution designed to extract real-time stock market data from Yahoo Finance. This project demonstrates practical web automation, data cleaning, and financial data engineering techniques suitable for market research, portfolio tracking, and data analysis.
