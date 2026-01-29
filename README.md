@@ -10,59 +10,62 @@ Yahoo Finance Stocks Scraper is a 🎯 lightweight, efficient Python web scrapin
 
 ✨ What Makes It Different
 
-🚀 Lightweight & Fast: Minimal dependencies, quick execution
+ Lightweight & Fast: Minimal dependencies, quick execution
 
-🎯 Real-Time Data: Extract live stock market information
+ Real-Time Data: Extract live stock market information
 
-🔄 Dual Pipeline: Separate scraper and cleaning modules for clarity
+ Dual Pipeline: Separate scraper and cleaning modules for clarity
 
-📊 Smart Data Processing: Advanced cleaning with value normalization
+ Smart Data Processing: Advanced cleaning with value normalization
 
-💼 Portfolio Ready: Clean code, proper documentation, production-grade
+ Portfolio Ready: Clean code, proper documentation, production-grade
 
 📊 Key Features
 
 ✅ Efficient Stock Data Extraction 📈
-🔗 Page-by-page pagination through market listings
+ Page-by-page pagination through market listings
 
-📋 Structured table parsing with CSS selectors
+ Structured table parsing with CSS selectors
 
-🎯 Robust element waiting with WebDriverWait
+ Robust element waiting with WebDriverWait
 
-⏸️ Graceful pagination detection (next button handling)
+ Graceful pagination detection (next button handling)
 
 ✅ Smart Data Extraction 🎯
-📌 Stock symbol and name extraction
 
-💹 Price data capture
+ Stock symbol and name extraction
 
-📊 Volume and market capitalization
+ Price data capture
 
-📈 PE ratio and percentage change tracking
+ Volume and market capitalization
 
-✅ Real-time market data
+ PE ratio and percentage change tracking
+
+ Real-time market data
 
 ✅ Comprehensive Data Cleaning 🧹
-🔤 String normalization (trim, lowercase)
 
-💰 Price conversion to numeric format
+ String normalization (trim, lowercase)
 
-📊 Volume formatting (M suffix handling, multiplication)
+ Price conversion to numeric format
 
-🏦 Market cap parsing (B, T suffix conversion)
+ Volume formatting (M suffix handling, multiplication)
 
-📈 PE ratio validation with fallback values
+ Market cap parsing (B, T suffix conversion)
 
-❌ Duplicate removal
+ PE ratio validation with fallback values
+
+ Duplicate removal
 
 ✅ Production-Grade Code 💻
-🛡️ Try-catch error handling
 
-⏱️ WebDriverWait for dynamic content
+ Try-catch error handling
 
-🎯 Graceful degradation on missing elements
+ WebDriverWait for dynamic content
 
-🏗️ Clean OOP architecture with methods
+ Graceful degradation on missing elements
+
+ Clean OOP architecture with methods
 
 🛠️ Tech Stack
 
@@ -78,8 +81,8 @@ text
 yahoo-finance-stocks-scraper/
 ├── 📄 README.md
 ├── 📄 requirements.txt
-├── 🐍 yahoo_scraper.py
-├── 🐍 clean_yahoo_data.py
+├──  yahoo_scraper.py
+├──  clean_yahoo_data.py
 ├── 📁 data/
 │   ├── yaho_fininces_stocks.csv
 │   └── yaho_fininces_stocks_data.csv
@@ -88,28 +91,28 @@ yahoo-finance-stocks-scraper/
     
 🚀 Quick Start
 
-📋 Prerequisites
+ Prerequisites
 
-✅ Python 3.8+ (3.9+ recommended)
+ Python 3.8+ (3.9+ recommended)
 
-✅ Google Chrome (latest version)
+ Google Chrome (latest version)
 
-✅ ChromeDriver (automatically managed by Selenium)
+ ChromeDriver (automatically managed by Selenium)
 
-✅ pip & Git
+ pip & Git
 
-🔧 Installation
-1️⃣ Clone Repository
+## 🔧 Installation
+ 1️⃣ Clone Repository
 bash
 git clone https://github.com/ketandas-codes/yahoo-finance-stocks-scraper.git
 cd yahoo-finance-stocks-scraper
 2️⃣ Create Virtual Environment
 bash
-# macOS / Linux
+ macOS / Linux
 python3 -m venv .venv
 source .venv/bin/activate
 
-# Windows PowerShell
+ Windows PowerShell
 python -m venv .venv
 .venv\Scripts\Activate.ps1
 3️⃣ Install Dependencies
@@ -122,29 +125,31 @@ selenium==4.15.2
 pandas==2.1.4
 4️⃣ Verify Chrome Installation ✅
 bash
-# macOS
+ macOS
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --version
 
-# Linux
+ Linux
 google-chrome --version
 
-# Windows
+ Windows
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --version
+
 💻 Usage
-▶️ Run the Scraper
+
+ Run the Scraper
 bash
 python yahoo_scraper.py
 What it does:
 
-🌐 Opens Yahoo Finance Most Active Stocks page
+ Opens Yahoo Finance Most Active Stocks page
 
-⏳ Waits for page to load completely
+ Waits for page to load completely
 
-📊 Scrapes all visible stock data
+ Scrapes all visible stock data
 
-➡️ Navigates through pagination pages
+ Navigates through pagination pages
 
-💾 Saves raw data to yaho_fininces_stocks.csv
+ Saves raw data to yaho_fininces_stocks.csv
 
 Output: yaho_fininces_stocks.csv (raw, unprocessed data)
 
@@ -152,24 +157,26 @@ text
 name | symbol | price | change | volume | market_cap | pe_ratio
 Apple | AAPL | 195.23 | +2.45% | 45.2m | 3.2t | 28.5
 Microsoft | MSFT | 425.16 | +1.82% | 18.5m | 3.15t | 35.2
+
 ▶️ Run the Data Cleaner
+
 bash
 python clean_yahoo_data.py
 What it does:
 
-📥 Reads raw CSV data
+ Reads raw CSV data
 
-🧹 Removes duplicates and normalizes strings
+ Removes duplicates and normalizes strings
 
-💰 Converts price to numeric format
+ Converts price to numeric format
 
-📊 Processes volume (handles M suffix, multiplies by 1M)
+ Processes volume (handles M suffix, multiplies by 1M)
 
-🏦 Parses market cap (B = billions, T = trillions)
+ Parses market cap (B = billions, T = trillions)
 
-📈 Validates PE ratio with fallback "--"
+ Validates PE ratio with fallback "--"
 
-💾 Exports cleaned data to yaho_fininces_stocks_data.csv
+ Exports cleaned data to yaho_fininces_stocks_data.csv
 
 Output: yaho_fininces_stocks_data.csv (cleaned, normalized data)
 
@@ -178,35 +185,37 @@ name | symbol | price | change | volume | market_cap | pe_ratio
 apple | aapl | 195.23 | +2.45% | 45200000 | 3200000000000 | 28.5
 microsoft | msft | 425.16 | +1.82% | 18500000 | 3150000000000 | 35.2
 🔧 Configuration & Customization
+
 ⚙️ Adjust Scraper Parameters
+
 Edit values in yahoo_scraper.py:
 
-⏱️ TIMEOUT: Increase if page loads slowly (default: 10s)
+ TIMEOUT: Increase if page loads slowly (default: 10s)
 
-🔄 MAX_PAGES: Limit pagination (default: all pages)
+ MAX_PAGES: Limit pagination (default: all pages)
 
-🌐 BASE_URL: Change to different stock filter pages
+ BASE_URL: Change to different stock filter pages
 
-🖥️ WINDOW_SIZE: Adjust browser resolution
+ WINDOW_SIZE: Adjust browser resolution
 
 🌍 Custom Stock Pages
 
 Modify the __main__ section to scrape different stock lists:
 
 python
-# Most Active Stocks
+ Most Active Stocks
 URL = "https://finance.yahoo.com/markets/stocks/most-active/"
 
-# Gainers
+ Gainers
 URL = "https://finance.yahoo.com/markets/stocks/gainers/"
 
-# Losers
+ Losers
 URL = "https://finance.yahoo.com/markets/stocks/losers/"
 
-# By market cap
+ By market cap
 URL = "https://finance.yahoo.com/markets/stocks/by-market-cap/"
 
-📝 Data Cleaning Details
+## 📝 Data Cleaning Details
 
 Price Cleaning
 Converts string to numeric format
@@ -242,16 +251,16 @@ Handles N/A and invalid values
 
 📊 Common Use Cases
 
-1. 📈 Market Trend Analysis
+1.  Market Trend Analysis
 Scrape stock data regularly to analyze market trends, identify gainers/losers, and track market movements.
 
-2. 💼 Investment Research
+2.  Investment Research
 Extract stock fundamentals (PE ratio, market cap) for investment screening and due diligence.
 
-3. 📊 Portfolio Monitoring
+3.  Portfolio Monitoring
 Track specific stocks over time and build historical price databases for analysis.
 
-4. 🎓 Learning Project
+4.  Learning Project
 Understand web scraping, data cleaning, and financial data processing with real market data.
 
 ⚠️ Important Notes & Best Practices
@@ -276,7 +285,7 @@ pip install --upgrade selenium
 
 ## ✅ Best Practices
 
-# ✅ DO:
+### ✅ DO:
 
 ⏳ Use WebDriverWait for dynamic content
 
@@ -288,7 +297,7 @@ pip install --upgrade selenium
 
 📊 Store raw data separately from cleaned data
 
-# ❌ DON'T:
+### ❌ DON'T:
 
 🚫 Hammer the server with rapid requests
 
@@ -341,14 +350,15 @@ Yahoo Finance API
 
 Web Scraping Best Practices
 
-🙌 Acknowledgments
-🌐 Selenium project for robust browser automation
+## 🙌 Acknowledgments
+ Selenium project for robust browser automation
 
-📊 pandas community for data manipulation tools
+ pandas community for data manipulation tools
 
-📈 Yahoo Finance for providing market data
+ Yahoo Finance for providing market data
 
 📈 Project Stats
+
 ⭐ Star this repo if you found it useful!
 
 🐛 Report issues to help improve
