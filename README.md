@@ -1,14 +1,14 @@
-📈 Yahoo Finance Stocks Scraper
+# 📈 Yahoo Finance Stocks Scraper
 
-📋 Project Overview
+## 📋 Project Overview
 
 Yahoo Finance Stocks Scraper is a 🎯 lightweight, efficient Python web scraping solution designed to extract real-time stock market data from Yahoo Finance. This project demonstrates practical web automation, data cleaning, and financial data engineering techniques suitable for market research, portfolio tracking, and data analysis.
 
-🎯 Purpose
+ ## 🎯 Purpose
 
 📊 Extract stock listing data (name, symbol, price, change, volume, market cap, PE ratio) from Yahoo Finance for market analysis, investment research, and portfolio demonstration. Built with clean code practices and efficient data processing.
 
-✨ What Makes It Different
+## ✨ What Makes It Different
 
  Lightweight & Fast: Minimal dependencies, quick execution
 
@@ -20,7 +20,7 @@ Yahoo Finance Stocks Scraper is a 🎯 lightweight, efficient Python web scrapin
 
  Portfolio Ready: Clean code, proper documentation, production-grade
 
-📊 Key Features
+## 📊 Key Features
 
 ✅ Efficient Stock Data Extraction 📈
  Page-by-page pagination through market listings
@@ -31,7 +31,7 @@ Yahoo Finance Stocks Scraper is a 🎯 lightweight, efficient Python web scrapin
 
  Graceful pagination detection (next button handling)
 
-✅ Smart Data Extraction 🎯
+## ✅ Smart Data Extraction 🎯
 
  Stock symbol and name extraction
 
@@ -43,7 +43,7 @@ Yahoo Finance Stocks Scraper is a 🎯 lightweight, efficient Python web scrapin
 
  Real-time market data
 
-✅ Comprehensive Data Cleaning 🧹
+## ✅ Comprehensive Data Cleaning 🧹
 
  String normalization (trim, lowercase)
 
@@ -57,7 +57,7 @@ Yahoo Finance Stocks Scraper is a 🎯 lightweight, efficient Python web scrapin
 
  Duplicate removal
 
-✅ Production-Grade Code 💻
+## ✅ Production-Grade Code 💻
 
  Try-catch error handling
 
@@ -67,7 +67,7 @@ Yahoo Finance Stocks Scraper is a 🎯 lightweight, efficient Python web scrapin
 
  Clean OOP architecture with methods
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 | 🔧 Technology   | 📌 Version | 🎯 Purpose                  |
 | --------------- | ---------- | --------------------------- |
@@ -75,9 +75,9 @@ Yahoo Finance Stocks Scraper is a 🎯 lightweight, efficient Python web scrapin
 | 🌐 Selenium     | 4.x        | Browser automation          |
 | 📊 pandas       | 2.0+       | Data processing & cleaning  |
 | 🎭 ActionChains | Selenium   | User interaction simulation |
-📁 Project Structure
 
-text
+## 📁 Project Structure
+
 yahoo-finance-stocks-scraper/
 ├── 📄 README.md
 ├── 📄 requirements.txt
@@ -89,7 +89,7 @@ yahoo-finance-stocks-scraper/
 └── 📁 docs/
     └── data_sample.csv
     
-🚀 Quick Start
+## 🚀 Quick Start
 
  Prerequisites
 
@@ -134,7 +134,7 @@ google-chrome --version
  Windows
 "C:\Program Files\Google\Chrome\Application\chrome.exe" --version
 
-💻 Usage
+## 💻 Usage
 
  Run the Scraper
 bash
@@ -158,7 +158,7 @@ name | symbol | price | change | volume | market_cap | pe_ratio
 Apple | AAPL | 195.23 | +2.45% | 45.2m | 3.2t | 28.5
 Microsoft | MSFT | 425.16 | +1.82% | 18.5m | 3.15t | 35.2
 
-▶️ Run the Data Cleaner
+## ▶️ Run the Data Cleaner
 
 bash
 python clean_yahoo_data.py
@@ -198,7 +198,7 @@ Edit values in yahoo_scraper.py:
 
  WINDOW_SIZE: Adjust browser resolution
 
-🌍 Custom Stock Pages
+## 🌍 Custom Stock Pages
 
 Modify the __main__ section to scrape different stock lists:
 
@@ -249,7 +249,7 @@ Fills missing values with "--"
 
 Handles N/A and invalid values
 
-📊 Common Use Cases
+## 📊 Common Use Cases
 
 1.  Market Trend Analysis
 Scrape stock data regularly to analyze market trends, identify gainers/losers, and track market movements.
@@ -263,7 +263,7 @@ Track specific stocks over time and build historical price databases for analysi
 4.  Learning Project
 Understand web scraping, data cleaning, and financial data processing with real market data.
 
-⚠️ Important Notes & Best Practices
+## ⚠️ Important Notes & Best Practices
 
 🔗 Chrome Driver Setup
 
@@ -313,55 +313,27 @@ pip install --upgrade selenium
 
  Skip data validation
 
-📜 License
-📋 MIT License — See LICENSE file for details.
+## 📜 License
+. MIT License
 
-✅ In plain English:
+## 📬 Contact
+. Ketan Das
 
-✅ Use commercially
+. Python Developer | Web Scraping & Automation
 
-✅ Modify freely
+. GitHub: @ketandas-codes
 
-✅ Distribute
-
-⚠️ Include original license
-
-⚠️ No warranty provided
-
-📧 Contact & Support
-👨‍💻 Author: Ketan Das
-🔖 Title: Python Developer | Web Scraping & Automation
-
-📧 Email: ketankumar.codes@gmail.com
-🐙 GitHub: @ketandas-codes
-💼 Portfolio: [Your Portfolio Link]
-
-💬 Questions or Issues?
-🐛 Report bugs: GitHub Issues
-
-💭 Discuss ideas: GitHub Discussions
-
-📬 Email for commercial inquiries
-
-🎓 Learning Resources
-📚 Related Concepts:
-
-Selenium Documentation
-
-Pandas Data Processing
-
-Yahoo Finance API
-
-Web Scraping Best Practices
+.📧 Email: ketandas.codes@gmail.com
+.🐙 GitHub: @ketandas-codes
 
 ## 🙌 Acknowledgments
  Selenium project for robust browser automation
 
  pandas community for data manipulation tools
-
+ 
  Yahoo Finance for providing market data
 
-📈 Project Stats
+## 📈 Project Stats
 
 ⭐ Star this repo if you found it useful!
 
